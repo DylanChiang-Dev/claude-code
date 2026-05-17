@@ -1,3 +1,99 @@
+# Claude Code Best V2 (CCB) Agent Notes
+
+## Start Here
+
+- Read this file first, then `RULES.md`, then the top policy section and latest entries in `MEMORY.md`.
+- Keep `README.md` as the human-facing project overview; do not turn it into an agent log.
+- Use `MEMORY.md` for durable collaboration notes, decisions, deployment facts, and gotchas.
+- Do not write secrets, tokens, private keys, or `.env` values into repository files or logs.
+
+## Repository
+
+- Owner: `DylanChiang-Dev`
+- Repository: `claude-code`
+- Origin: `https://github.com/DylanChiang-Dev/claude-code`
+- Local path: `/Users/dc/Documents/github/DylanChiang-Dev/claude-code`
+- Main branch: `main`
+- Private: `False`
+
+## Tech Stack
+
+- Node.js package `claude-js`; scripts: build, check:unused, dev, docs:dev, format, health, lint, lint:fix, prepare, prepublishOnly, test
+
+## Common Commands
+
+- Install: `npm install`
+- Develop: `npm run dev`
+- Build: `npm run build`
+- Test: `npm test`
+- Lint: `npm run lint`
+
+## Work Rules
+
+- Before editing, inspect the relevant source files and existing style.
+- Keep changes small and reviewable; avoid unrelated refactors.
+- Run the fastest relevant check after changes.
+- Commit completed work with a clear Chinese commit message unless the user asks otherwise.
+- Push only after the local verification for the change has passed.
+
+## Documentation Map
+
+- `README.md`: project overview for humans.
+- `AGENTS.md`: current agent entrypoint and operating notes.
+- `RULES.md`: stable repository-specific rules.
+- `MEMORY.md`: progressive collaboration memory and historical notes.
+
+## Migrated From `AGENTS.md`
+
+```markdown
+# Claude Code Best V2 (CCB) Agent Notes
+
+## Start Here
+
+- Read this file first, then `RULES.md`, then the top policy section and latest entries in `MEMORY.md`.
+- Keep `README.md` as the human-facing project overview; do not turn it into an agent log.
+- Use `MEMORY.md` for durable collaboration notes, decisions, deployment facts, and gotchas.
+- Do not write secrets, tokens, private keys, or `.env` values into repository files or logs.
+
+## Repository
+
+- Owner: `DylanChiang-Dev`
+- Repository: `claude-code`
+- Origin: `https://github.com/DylanChiang-Dev/claude-code`
+- Local path: `/Users/dc/Documents/github/DylanChiang-Dev/claude-code`
+- Main branch: `main`
+- Private: `False`
+
+## Tech Stack
+
+- Node.js package `claude-js`; scripts: build, check:unused, dev, docs:dev, format, health, lint, lint:fix, prepare, prepublishOnly, test
+
+## Common Commands
+
+- Install: `npm install`
+- Develop: `npm run dev`
+- Build: `npm run build`
+- Test: `npm test`
+- Lint: `npm run lint`
+
+## Work Rules
+
+- Before editing, inspect the relevant source files and existing style.
+- Keep changes small and reviewable; avoid unrelated refactors.
+- Run the fastest relevant check after changes.
+- Commit completed work with a clear Chinese commit message unless the user asks otherwise.
+- Push only after the local verification for the change has passed.
+
+## Documentation Map
+
+- `README.md`: project overview for humans.
+- `AGENTS.md`: current agent entrypoint and operating notes.
+- `RULES.md`: stable repository-specific rules.
+- `MEMORY.md`: progressive collaboration memory and historical notes.
+
+## Migrated From `CLAUDE.md`
+
+```markdown
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -113,3 +209,5 @@ All `feature('FLAG_NAME')` calls come from `bun:bundle` (a build-time API). In t
 - **React Compiler output** — Components have decompiled memoization boilerplate (`const $ = _c(N)`). This is normal.
 - **`bun:bundle` import** — In `src/main.tsx` and other files, `import { feature } from 'bun:bundle'` works at build time. At dev-time, the polyfill in `cli.tsx` provides it.
 - **`src/` path alias** — tsconfig maps `src/*` to `./src/*`. Imports like `import { ... } from 'src/utils/...'` are valid.
+```
+```
